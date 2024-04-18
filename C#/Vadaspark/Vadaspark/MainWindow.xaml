@@ -8,20 +8,30 @@
         Title="Állat felvezetési űrlap" Height="450" Width="800" Background="#FF026318">
     <Grid>
         <Label Content="Állat neve:" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" FontSize="14" Width="101" Height="30" FontWeight="Bold"/>
-        <Label Content="Állat felvezetési űrlap" HorizontalAlignment="Left" Margin="253,10,0,0" VerticalAlignment="Top" Height="40" Width="259" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Állat felvezetési űrlap" HorizontalAlignment="Left" Margin="269,10,0,0" VerticalAlignment="Top" Height="40" Width="259" FontWeight="Bold" FontSize="24"/>
         <TextBox x:Name="animalname" HorizontalAlignment="Left" Height="30" Margin="116,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontSize="18"/>
         <Label Content="Állat faja:" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" FontSize="14" Width="101" Height="30" FontWeight="Bold"/>
         <Label Content="Születési idő:" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" FontSize="14" Width="101" Height="30" FontWeight="Bold"/>
         <TextBox x:Name="animaltype" HorizontalAlignment="Left" Height="30" Margin="116,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontSize="18"/>
         <TextBox x:Name="birthday" HorizontalAlignment="Left" Height="30" Margin="116,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontSize="18"/>
-        <RadioButton x:Name="type_male" Content="Hím" HorizontalAlignment="Left" Margin="116,204,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <RadioButton x:Name="type_female" Content="Nőstény" HorizontalAlignment="Left" Margin="213,204,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <ListBox x:Name="animallist" HorizontalAlignment="Left" Height="346" Margin="483,63,0,0" VerticalAlignment="Top" Width="299"/>
-        <Button x:Name="deletebtn" Content="Állat törlése a listáról" HorizontalAlignment="Left" Height="38" Margin="356,63,0,0" VerticalAlignment="Top" Width="122"/>
-        <Button x:Name="writebtn" Content="Állat törlése a listáról" HorizontalAlignment="Left" Height="40" Margin="341,121,0,0" VerticalAlignment="Top" Width="137"/>
-        <Button x:Name="datatolistbtn" Content="Állat felezetése a listára" HorizontalAlignment="Left" Height="38" Margin="341,63,0,0" VerticalAlignment="Top" Width="137"/>
-        <Button x:Name="closeapp" Content="Kilépés" HorizontalAlignment="Left" Height="55" Margin="182,341,0,0" VerticalAlignment="Top" Width="167" FontSize="20" FontWeight="Bold" Click="closeapp_Click"/>
-        <Button x:Name="datawritedown" Content="Adatok rögzítése" HorizontalAlignment="Left" Height="55" Margin="10,341,0,0" VerticalAlignment="Top" Width="167" FontSize="20" FontWeight="Bold" Click="datawritedown_Click"/>
+        <RadioButton x:Name="type_male" Content="Hím" HorizontalAlignment="Left" Margin="132,190,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton x:Name="type_female" Content="Nőstény" HorizontalAlignment="Left" Margin="213,190,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.496,-0.811"/>
+        <ListBox x:Name="animallist" HorizontalAlignment="Left" Height="259" Margin="540,54,0,0" VerticalAlignment="Top" Width="242"/>
+        <Button x:Name="deletebtn" Content="Állat törlése a listáról" HorizontalAlignment="Left" Height="38" Margin="660,318,0,0" VerticalAlignment="Top" Width="122" Click="deletebtn_Click"/>
+        <Button x:Name="closeapp" Content="Kilépés" HorizontalAlignment="Left" Height="39" Margin="182,357,0,0" VerticalAlignment="Top" Width="129" FontSize="20" FontWeight="Bold" Click="closeapp_Click"/>
+        <Button x:Name="datawritedown" Content="Adatok rögzítése" HorizontalAlignment="Left" Height="39" Margin="10,357,0,0" VerticalAlignment="Top" Width="167" FontSize="20" FontWeight="Bold" Click="datawritedown_Click"/>
+        <Label x:Name="amount" Content="" HorizontalAlignment="Left" Margin="540,330,0,0" VerticalAlignment="Top"/>
+        <Label Content="Származási hely:" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" FontSize="14" Width="122" Height="29" FontWeight="Bold"/>
+        <TextBox x:Name="Place_of_origin" HorizontalAlignment="Left" Height="30" Margin="132,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" FontSize="18"/>
+        <Label Content="Osztály:" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top" FontSize="14" Width="122" Height="29" FontWeight="Bold"/>
+        <RadioButton x:Name="yes_protected" Content="Védett" HorizontalAlignment="Left" Margin="132,254,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton x:Name="not_protected" Content="Nem védett" HorizontalAlignment="Left" Margin="213,254,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Védett-e az állat:" HorizontalAlignment="Left" Margin="10,248,0,0" VerticalAlignment="Top" FontSize="14" Width="122" Height="29" FontWeight="Bold"/>
+        <Label Content="Állat neme:" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" FontSize="14" Width="101" Height="30" FontWeight="Bold"/>
+        <RadioButton x:Name="reptilian" Content="Hüllő" HorizontalAlignment="Left" Margin="132,288,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton x:Name="amphibious" Content="Kétéltűek" HorizontalAlignment="Left" Margin="224,288,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton x:Name="bird" Content="Madarak" HorizontalAlignment="Left" Margin="132,311,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton x:Name="mammals" Content="Emlősök" HorizontalAlignment="Left" Margin="224,311,0,0" VerticalAlignment="Top" FontSize="14"/>
 
     </Grid>
 </Window>
