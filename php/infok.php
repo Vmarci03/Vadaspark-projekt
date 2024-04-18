@@ -33,6 +33,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="../php/infok.php" tabindex="-1" aria-disabled="true">Információk</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/kerdesek.html" tabindex="-1" aria-disabled="true">Gyakori kérdések</a>
+              </li>
             </ul>
           </div>
         </div>
