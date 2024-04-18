@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vadaspark"
         mc:Ignorable="d"
-        Title="Állat felvezetési űrlap" Height="450" Width="800" Background="#FF026318">
+        Title="Állat felvezetési űrlap" Height="450" Width="800" Background="#FFFBEED8">
     <Grid>
         <Label Content="Állat neve:" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" FontSize="14" Width="101" Height="30" FontWeight="Bold"/>
         <Label Content="Állat felvezetési űrlap" HorizontalAlignment="Left" Margin="269,10,0,0" VerticalAlignment="Top" Height="40" Width="259" FontWeight="Bold" FontSize="24"/>

@@ -41,7 +41,17 @@ namespace Vadaspark
             sw.Flush();
             sw.Close();
 
-            amount.Content = animallist.Items.Count;
+            animallist.Items.Add(animalname.Text);
+            animallist.Items.Add(animaltype.Text);
+            animallist.Items.Add(birthday.Text);
+
+            if (animallist.Items.Count >= 1)
+            {
+                int animalamount = 0;
+                animalamount++;
+                amount.Content = animalamount;
+
+            }
 
             animalname.Text = "";
             animaltype.Text = "";
@@ -68,6 +78,11 @@ namespace Vadaspark
             else
             {
                 animallist.Items.RemoveAt(animallist.SelectedIndex);
+            }
+
+            if (animallist.Items.Count == 0)
+            {
+                amount.Content = "";
             }
         }
     }
