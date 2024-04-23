@@ -25,7 +25,7 @@
                 <a class="nav-link" href="../html/allataink.html">Állataink</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../php/orokbefogadas.php">Örökbefogadás</a>
+                <a class="nav-link active" href="../php/orokbefogadas.php">Örökbefogadás</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../html/jegyarak.html">Jegyárak</a>
