@@ -3,6 +3,7 @@
 ## A csapat tagjai:
 ### Vékony Marcell - csapat vezető
 ### Csontos Márió Dávid - csapattag
+#
 ## Használt alkalmazások/weboldalak:
 ### Visual Studio Code - weboldal szerkesztéséhez/javításához
 ### Visual Studio 2019 - C# grafikus felület létrehozásához
