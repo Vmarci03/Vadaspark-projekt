@@ -16,6 +16,7 @@ body:not(#home), .modal-content{
     border: 1px solid #0243bb;
     margin-bottom: 1rem;
     background-color: #fff;
+    border-radius: 4px;
 }
 
 h5{
