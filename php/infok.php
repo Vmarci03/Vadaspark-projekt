@@ -31,7 +31,7 @@
                 <a class="nav-link" href="../html/jegyarak.html">Jegyárak</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../php/infok.php" tabindex="-1" aria-disabled="true">Információk</a>
+                <a class="nav-link active" href="../php/infok.php" tabindex="-1" aria-disabled="true">Információk</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../html/kerdesek.html" tabindex="-1" aria-disabled="true">Gyakori kérdések</a>
