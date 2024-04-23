@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Ápr 17. 16:51
+-- Létrehozás ideje: 2024. Ápr 23. 09:26
 -- Kiszolgáló verziója: 10.4.6-MariaDB
 -- PHP verzió: 7.3.8
 
@@ -43,7 +43,8 @@ INSERT INTO `etetes` (`etetesid`, `megnev`, `idopont`, `kep`) VALUES
 (1, 'Pingvinek látványetetése', 'Kedd, péntek 14:00 - 14:15', 'pingvinetetes.jpg'),
 (2, 'Óriás teknősök etetése', 'Hétfő, szerda 10:00 - 10:30', 'teknosetetes.jpg'),
 (3, 'Tigrisek déli etetése', 'Csütörtök 12:00 - 12:30', 'tigrisetetes.jpg'),
-(4, 'Majomparádé - hosszú farkú makákó', 'Szerda, szombat 14:00 - 15:00', 'majometetes.jpg');
+(4, 'Majomparádé - hosszú farkú makákó', 'Szerda, szombat 14:00 - 15:00', 'majometetes.jpg'),
+(5, 'Vidrák etetése', 'Vasárnap 10:00 – 10:30', 'vidraetetes.jpg');
 
 -- --------------------------------------------------------
 
@@ -89,6 +90,26 @@ INSERT INTO `menu` (`menuid`, `megnev`, `leiras`, `ar`, `kep`) VALUES
 
 -- --------------------------------------------------------
 
+--
+-- Tábla szerkezet ehhez a táblához `orokbefogadas`
+--
+
+CREATE TABLE `orokbefogadas` (
+  `nev` varchar(100) COLLATE utf8_hungarian_ci NOT NULL,
+  `telszam` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
+  `email` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
+  `allatneve` varchar(10) COLLATE utf8_hungarian_ci NOT NULL,
+  `osszeg` bigint(100) NOT NULL,
+  `fizetes` varchar(20) COLLATE utf8_hungarian_ci NOT NULL,
+  `megj` varchar(30) COLLATE utf8_hungarian_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `orokbefogadas`
+--
+
+INSERT INTO `orokbefogadas` (`nev`, `telszam`, `email`, `allatneve`, `osszeg`, `fizetes`, `megj`) VALUES
+('Csontos Márió', '0620547830', 'csontos.mariodavi-20', 'Coco', 100000, 'átutalás', '');
 
 --
 -- Indexek a kiírt táblákhoz
